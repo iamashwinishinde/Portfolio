@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashwini Shinde - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .project-card {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
+            background-size: 300% 300%;
+            animation: gradient 6s ease infinite;
+        }
+        /* Ensures cards in a row have equal height */
+        .equal-height-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+    </style>
+</head>
+<body class="text-white bg-slate-900 font-sans selection:bg-blue-500/30">
+
+    <nav class="fixed top-0 w-full z-50 bg-slate-900/90 backdrop-blur-md border-b border-white/10">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tighter gradient-text">ASHWINI SHINDE</div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+                <a href="#home" class="hover:text-blue-400 transition">Home</a>
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 text-center md:text-left">
+                <div class="inline-block mb-4 px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full text-sm font-bold tracking-widest uppercase">
+                    JAVA FULL STACK DEVELOPER
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                    Engineering <br><span class="gradient-text">Smart Solutions</span>
+                </h1>
+                <p class="text-lg text-gray-400 mb-8 max-w-xl">
+                    Computer Science & Design student at MET Institute of Technology. 
+                    Specializing in AI-driven edge systems, IoT, and high-performance web development.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#projects" class="px-8 py-3 bg-blue-600 rounded-full font-bold hover:bg-blue-700 transition transform hover:scale-105">View Projects</a>
+                    <a href="#contact" class="px-8 py-3 border border-white/20 rounded-full font-bold hover:bg-white/10 transition">Get In Touch</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-72 h-72 md:w-96 md:h-96">
+                    <div class="absolute inset-0 bg-blue-500 rounded-full blur-3xl opacity-20 animate-pulse"></div>
+                    <div class="w-full h-full rounded-2xl bg-gradient-to-br from-white/10 to-white/5 border border-white/20 backdrop-blur-3xl flex items-center justify-center overflow-hidden">
+                        <img src="profile-photo.jpg" alt="Ashwini Shinde" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-slate-800/50">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-start">
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 flex items-center gap-4">
+                        <span class="w-12 h-1 bg-blue-500"></span> Education
+                    </h2>
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-xl font-bold">B.Tech - Computer Science & Design</h3>
+                            <p class="text-blue-400">MET Institute of Technology</p>
+                            <p class="text-gray-500 text-sm">2021 — 2025 | CGPA: 8.6/10</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Higher Secondary (Class XII)</h3>
+                            <p class="text-blue-400">Rastriya Vidyalaya Junior College</p>
+                            <p class="text-gray-500 text-sm">Aggregate: 90%</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 flex items-center gap-4">
+                        <span class="w-12 h-1 bg-purple-500"></span> Core Skills
+                    </h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="card p-6 text-center"><i class="fab fa-python text-4xl text-blue-400"></i><p>Python</p></div>
+        <div class="card p-6 text-center"><i class="fab fa-js text-4xl text-yellow-400"></i><p>JavaScript</p></div>
+        <div class="card p-6 text-center"><i class="fas fa-database text-4xl text-blue-600"></i><p>SQL</p></div>
+        <div class="card p-6 text-center"><i class="fab fa-node-js text-4xl text-green-400"></i><p>Node.js</p></div>
+        <div class="card p-6 text-center"><i class="fas fa-brain text-4xl text-pink-400"></i><p>Machine Learning</p></div>
+        <div class="card p-6 text-center"><i class="fab fa-java text-4xl text-orange-600"></i><p>Java</p></div>
+        <div class="card p-6 text-center"><i class="fab fa-aws text-4xl text-orange-400"></i><p>AWS & Docker</p></div>
+        <div class="card p-6 text-center"><i class="fas fa-microchip text-4xl text-cyan-300"></i><p>IoT (ESP32)</p></div>
+    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-16 text-center">Work Experience</h2>
+            <div class="max-w-4xl mx-auto space-y-12">
+                <div class="relative pl-8 border-l border-white/10">
+                    <div class="absolute -left-1.5 top-0 w-3 h-3 bg-blue-500 rounded-full"></div>
+                    <div class="bg-white/5 p-8 rounded-2xl border border-white/10">
+                        <span class="text-blue-400 text-sm font-bold uppercase tracking-widest">Dec 2022 – Mar 2024</span>
+                        <h3 class="text-2xl font-bold mt-2">Web Development Intern</h3>
+                        <p class="text-gray-400 mb-4">Sunanda Infotech</p>
+                        <ul class="text-gray-400 space-y-2 text-sm">
+                            <li>• Developed responsive web pages using HTML, CSS, and JavaScript.</li>
+                            <li>• Improved UI functionality through front-end design principles.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative pl-8 border-l border-white/10">
+                    <div class="absolute -left-1.5 top-0 w-3 h-3 bg-purple-500 rounded-full"></div>
+                    <div class="bg-white/5 p-8 rounded-2xl border border-white/10">
+                        <span class="text-purple-400 text-sm font-bold uppercase tracking-widest">Jun 2023 – Jul 2023</span>
+                        <h3 class="text-2xl font-bold mt-2">Cybersecurity Intern</h3>
+                        <p class="text-gray-400 mb-4">Cyber Sanskar</p>
+                        <ul class="text-gray-400 space-y-2 text-sm">
+                            <li>• Identified vulnerabilities and implemented security protocols.</li>
+                            <li>• Conducted security assessments and incident response.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative pl-8 border-l border-white/10">
+                    <div class="absolute -left-1.5 top-0 w-3 h-3 bg-green-500 rounded-full"></div>
+                    <div class="bg-white/5 p-8 rounded-2xl border border-white/10">
+                        <span class="text-green-400 text-sm font-bold uppercase tracking-widest">Oct 2024 – Nov 2024</span>
+                        <h3 class="text-2xl font-bold mt-2">Python Programming</h3>
+                        <p class="text-gray-400 mb-4">Coding Seekho</p>
+                        <ul class="text-gray-400 space-y-2 text-sm">
+                            <li>• Developed skills in OOP, functional programming, and regular expressions.</li>
+                            <li>• Mastered modular code, automation with Python, and file handling.</li>
+                            <li>• Implemented error handling, data structures, decoders, and data manipulation techniques.</li>
+                            <li>• Applied principles of logical structuring for scalable code design.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-slate-800/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-16 text-center">Featured Projects</h2>
+            <div class="equal-height-grid">
+                <a href="https://veronica-advanced-bike-assistant.netlify.app/veronica.html" target="_blank" rel="noopener noreferrer" class="project-card p-[1px] rounded-2xl group">
+                    <div class="bg-slate-900 h-full p-8 rounded-2xl transition group-hover:bg-slate-900/80">
+                        <h3 class="text-2xl font-bold mb-4">VERONICA: AI System</h3>
+                        <p class="text-gray-400 text-sm mb-6">
+                            Intelligent edge-based assistant for bike safety using ESP32 and MPU6050 sensors.
+                        </p>
+                        <div class="flex gap-2">
+                            <span class="text-xs font-bold px-3 py-1 bg-white/10 rounded-full">IoT</span>
+                            <span class="text-xs font-bold px-3 py-1 bg-white/10 rounded-full">ESP32</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="project-card p-[1px] rounded-2xl group">
+                    <div class="bg-slate-900 h-full p-8 rounded-2xl transition group-hover:bg-slate-900/80">
+                        <h3 class="text-2xl font-bold mb-4">Electricity Theft Detection</h3>
+                        <p class="text-gray-400 text-sm mb-6">
+                            Predictive model utilizing ANN to identify abnormal consumption patterns.
+                        </p>
+                        <div class="flex gap-2">
+                            <span class="text-xs font-bold px-3 py-1 bg-white/10 rounded-full">Python</span>
+                            <span class="text-xs font-bold px-3 py-1 bg-white/10 rounded-full">ANN</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://nurserynextdoor.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-card p-[1px] rounded-2xl group">
+                    <div class="bg-slate-900 h-full p-8 rounded-2xl transition group-hover:bg-slate-900/80">
+                        <h3 class="text-2xl font-bold mb-4">NurseryNextDoor</h3>
+                        <p class="text-gray-400 text-sm mb-6">
+                            Plant e-commerce website with categories and product listings.
+                        </p>
+                        <div class="flex gap-2">
+                            <span class="text-xs font-bold px-3 py-1 bg-white/10 rounded-full">E-commerce</span>
+                            <span class="text-xs font-bold px-3 py-1 bg-white/10 rounded-full">Web</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="py-24 bg-slate-800/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-16 text-center">
+                <span class="border-b-4 border-blue-500 pb-2">Resume</span>
+            </h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white bg-opacity-10 rounded-xl p-8 backdrop-filter backdrop-blur-sm border border-white/20">
+                    <div class="text-center mb-8">
+                        <i class="fas fa-file-alt text-blue-400 text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4">Download My Resume</h3>
+                        <p class="text-gray-300 mb-6">
+                            Get a detailed overview of my skills, experience, and projects in a professional format.
+                        </p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-white bg-opacity-10 rounded-lg p-6 border border-white/20">
+                            <h4 class="text-lg font-bold mb-3 text-blue-300">Experience Highlights</h4>
+                            <ul class="text-gray-300 space-y-2">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                    Full Stack Development (Java, Spring Boot, Node.js)
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                    AI & Machine Learning Projects
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                    IoT & Hardware Integration
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                    Cloud Deployment (AWS, Docker)
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white bg-opacity-10 rounded-lg p-6 border border-white/20">
+                            <h4 class="text-lg font-bold mb-3 text-purple-300">Key Skills</h4>
+                            <ul class="text-gray-300 space-y-2">
+                                <li class="flex items-center">
+                                    <i class="fas fa-code text-purple-400 mr-2"></i>
+                                    Java, Spring Boot, JavaScript
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-code text-purple-400 mr-2"></i>
+                                    Python, Flask, Machine Learning
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-code text-purple-400 mr-2"></i>
+                                    SQL, MongoDB, Git
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-code text-purple-400 mr-2"></i>
+                                    Docker, AWS, IoT (ESP32)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="resume.pdf" download class="flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-lg font-medium transition duration-300 transform hover:scale-105">
+                            <i class="fas fa-download mr-2"></i>
+                            Download PDF Resume
+                        </a>
+                        <a href="resume.docx" download class="flex items-center justify-center px-8 py-4 border border-blue-400 hover:bg-blue-900 hover:bg-opacity-30 rounded-lg font-medium transition duration-300 transform hover:scale-105">
+                            <i class="fas fa-file-word mr-2"></i>
+                            Download Word Doc
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8">Let's Connect</h2>
+            <p class="text-gray-400 mb-12 max-w-lg mx-auto">
+                Currently looking for opportunities in Software Development and AI Engineering.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-8 items-center">
+                <a href="mailto:ashwinishinde570000@gmail.com" class="flex items-center gap-4 text-xl hover:text-blue-400 transition">
+                    <i class="fas fa-envelope text-blue-500"></i>
+                </a>
+                <a href="tel:+917972858284" class="flex items-center gap-4 text-xl hover:text-blue-400 transition">
+                    <i class="fas fa-phone text-blue-500"></i>
+                </a>
+                <a href="https://github.com/iamashwinishinde" class="flex items-center gap-4 text-xl hover:text-blue-400 transition">
+                    <i class="fab fa-github text-blue-500"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/10 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 Ashwini Shinde. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
